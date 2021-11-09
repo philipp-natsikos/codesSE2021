@@ -1,6 +1,8 @@
 package org.hbrs.se1.ws21.uebung1.view;
 
-public class Client {
+import org.hbrs.se1.ws21.uebung1.control.factory.Translaterfactory;
+
+public class Client  {
 
 	/*
 	 * Methode zur Ausgabe einer Zahl auf der Console
@@ -12,9 +14,9 @@ public class Client {
 		//
 		// Strenge Implementierung gegen das Interface Translator gewuenscht!
 
-		System.out.println("Das Ergebnis der Berechnung: " +
-				"[das Ergebnis an dieser Stelle]"  );
 
+		System.out.println("Das Ergebnis der Berechnung: " +
+				"[]" + Translaterfactory.createGermantranslater().translateNumber(aNumber));
 	}
 }
 
